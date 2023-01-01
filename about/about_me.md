@@ -4,7 +4,7 @@
 ```
 CSDN：https://blog.csdn.net/qq_45894840?type=blog
 Gmail：baimao3389@gmail.com
-QQ:3316735898
+QQ：3316735898
 ```
 # 个人荣誉
 ```
