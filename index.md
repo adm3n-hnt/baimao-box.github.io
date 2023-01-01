@@ -4,9 +4,9 @@
 
 # 区块链安全
 
-[区块链安全（1）区块链安全简介（blockchain security）](./ctf_wp/区块链安全(1))
+[区块链安全（1）区块链安全简介（blockchain security）](./blockchain_security/区块链安全(1))
 
-[区块链安全（2）区块链实验环境搭建（blockchain security）](./ctf_wp/区块链安全(2))
+[区块链安全（2）区块链实验环境搭建（blockchain security）](./blockchain_security/区块链安全(2))
 
 # CTF大赛题目WP
 
