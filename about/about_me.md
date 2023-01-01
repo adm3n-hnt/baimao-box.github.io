@@ -1,5 +1,9 @@
 # 简介
 我是成都市一名在读的高中生，全栈CTFer，Redteam，星盟安全团队成员，TwinTurbine团队创始人
+## 联系方式：
+CSDN：https://blog.csdn.net/qq_45894840?type=blog
+Gmail：baimao3389@gmail.com
+QQ:3316735898
 # 个人荣誉
 ```
 2022 DASCTF第23名
