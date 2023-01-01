@@ -4,10 +4,10 @@
 
 # 区块链安全
 
-[区块链安全（1）区块链安全简介（blockchain security）](./ctf_wp/区块链安全（1）区块链安全简介（blockchain security）.md)
+[区块链安全（1）区块链安全简介（blockchain security）](./ctf_wp/区块链安全(1))
 
-[区块链安全（2）区块链实验环境搭建（blockchain security）](./ctf_wp/区块链安全（2）区块链实验环境搭建（blockchain security）.md)
+[区块链安全（2）区块链实验环境搭建（blockchain security）](./ctf_wp/区块链安全(2))
 
 # CTF大赛题目WP
 
-[Hack The Boo 2022 CTF Writeups](./ctf_wp/Hack The Boo 2022 CTF Writeups.md)
+[Hack The Boo 2022 CTF Writeups](./ctf_wp/Hack_The_Boo_2022_CTF_Writeups)
