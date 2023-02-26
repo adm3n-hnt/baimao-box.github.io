@@ -60,6 +60,6 @@ hackthebox上做了40台机子，tryhackme平台上也做了一些
 常用的：
 python，x86汇编语言
 有基础的：
-c语言，c++，php，html，arm汇编语言，bash
+java，c语言，c++，php，html，arm汇编语言，bash
 ```
-更新于2023年1月1日
+更新于2023年2月26日
