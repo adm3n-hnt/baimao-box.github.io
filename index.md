@@ -1,5 +1,7 @@
 # Ba1_Ma0的博客
 
+联系方式：baimao3389@gmail.com
+
 # [about me](./about/about_me.md)
 
 # 计算机取证
