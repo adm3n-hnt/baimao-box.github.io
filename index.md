@@ -91,8 +91,6 @@
 
 [Ghidra逆向分析工具使用与实战](./reverse/Ghidra逆向分析工具使用与实战.md)
 
-[Google CTF GATEKEEPER逆向 使用ltrace跟踪程序](./reverse/Google%20CTF%20GATEKEEPER逆向%20__使用ltrace跟踪程序.md)
-
 [HackTheBox Behind The Scenes 逆向题目分析](./reverse/HackTheBox%20Behind%20The%20Scenes%20逆向题目分析.md)
 
 [HackTheBox Bypass 逆向题目分析](./reverse/HackTheBox%20Bypass%20逆向题目分析.md)
