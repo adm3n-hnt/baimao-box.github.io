@@ -1,57 +1,57 @@
 ﻿简介
-“pwn"这个词的源起以及它被广泛地普遍使用的原因，源自于魔兽争霸某段讯息上设计师打字时拼错而造成的，原先的字词应该是"own"这个字，因为 ‘p’ 与 ‘o’ 在标准英文键盘上的位置是相邻的，PWN 也是一个黑客语法的俚语词，是指攻破设备或者系统。发音类似"砰”，对黑客而言，这就是成功实施黑客攻击的声音，而在ctf比赛里，pwn是对二进制漏洞的利用
+“pwn”这个词的起源以及它被广泛普遍使用的原因，源自于魔兽争霸某段消息上设计师的口头拼错而造成的，语义的词词应该是“own”这个词，因为'p' 与 'o' 在标准中文键盘上的位置是相邻的，PWN 也是一个黑客语法的俚语词，是指攻破设备或者系统。成功发音类似“砰”，对黑客而言，这就是实施黑客攻击的声音，而在ctf比赛里，pwn是对二进制漏洞的利用
 
 下载这个github库，进入10文件夹
-```
+````
 https://github.com/Crypto-Cat/CTF/tree/main/pwn/binary_exploitation_101
-```
-# 获取文件信息
+````
+#获取文件信息
 使用checksec工具可以查看程序更详细的信息
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c5ee91a3f5d34d7a9ad07ca0210cee39.png)
+![这里插入图片描述] ( https://img-blog.csdnimg.cn/c5ee91a3f5d34d7a9ad07ca0210cee39.png )
 
-从上到下依次是:
-```
-32位程序
-部分RELRO，基本上所有程序都默认的有这个
+从上到下依次是：
+````
+32位节目
+部分RELRO，基本上所有程序都默认的都有这个
 开启了栈保护
-启用了数据执行防护，我们不能在堆栈中执行代码
-没有启用pie防护
-```
-Canary是为了避免程序缓冲区溢出的一个保护机制，他会在堆栈中插入一个值，当函数返回时，程序会检查值是否被更改，用来确定程序是否发生了缓冲区溢出
+启用了数据防护执行，我们不能在堆栈中执行代码
+没有启用填充防护饼
+````
+Canary是为了避免程序屏幕溢出的一个保护机制，他会在堆栈中插入一个值，当函数返回时，程序会检查该值是否被更改，以确定程序是否发生了屏幕溢出
 
-查看程序源代码
+查看程序来源代码
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/713af36165484279982d2904888c4ee4.png)
+![这里插入图片描述] ( https://img-blog.csdnimg.cn/713af36165484279982d2904888c4ee4.png )
 
-```
+````
 #include <stdio.h>
-#include <string.h>
+#include <字符串.h>
 
-void hacked() {   //自定义hacked模块
-    puts("Wait, how did you get in here?!");   //输出内容
+void hacked() { //自定义hacked模块
+    put("等等，你是怎么进来的？！"); //输出内容
 }
 
-void vuln() {   //自定义vuln模块
-    char buffer[64];  //定义buffer变量，缓冲区为64个字符
+void vuln() { //自定义vuln模块
+    字符像素[64]；//定义像素像素，焦点为64个字符
 
-    puts("You'll never beat my state of the art stack protector!");   //输出内容
-    gets(buffer);   //获取我们的输入
-    printf(buffer);   //输出我们的输入
+    put(“你永远无法击败我最先进的堆栈保护器！”); //输出内容
+    获取（枢纽）；//获取我们的输入
+    printf( 弧度 ); // 输出我们的输入
 
-    puts("\nWho said gets() is dangerous? Good luck with your BOF attack :P");   //输出字符
-    gets(buffer);   //再次获取输入
+    put("\n谁说 gets() 很危险？祝你的 BOF 攻击好运：P"); //输出字符
+    获取（枢纽）；//获取再次输入
 }
 
 int main() {
-    vuln();   //调用vuln模块
+    漏洞（）；//调用vuln模块
 }
-```
+````
 
 
-我们需要让程序执行hacked模块的内容，就要控制程序的返回地址，然后我们用ghidra打开程序，去到main函数的地方
+我们需要让程序执行破解模块的内容，要控制程序的返回地址，然后我们用ghidra打开程序，转到主函数的位置
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8f22cb3997f646309a7c32423553a38e.png)
+![这里插入图片描述] ( https://img-blog.csdnimg.cn/8f22cb3997f646309a7c32423553a38e.png )
 
 
 
