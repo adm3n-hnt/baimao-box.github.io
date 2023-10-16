@@ -5,7 +5,7 @@
 ```
 https://github.com/Crypto-Cat/CTF/tree/main/pwn/binary_exploitation_101
 ```
-# 获取文件信息
+# 获取文件信
 使用checksec工具可以查看程序更详细的信息
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/c5ee91a3f5d34d7a9ad07ca0210cee39.png)
